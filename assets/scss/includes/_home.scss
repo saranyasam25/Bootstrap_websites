@@ -1,0 +1,265 @@
+.home-header{
+        font-family: 'Sulphur Point';
+        background-image: url('/public/images/section_1.jpg');
+        background-size: cover;
+        @include media-min-sm{
+            background-size: cover;
+        }
+        .nav-link.active{
+            color: $pink-color-btn !important;
+        }
+
+        .navbar-nav{
+            .nav-item{
+                font-size: 20px;
+                color: white;
+                .nav-link{
+                    color:white;
+                    &:hover {
+                        color: white; 
+                        border-bottom: 2px solid $pink-color-btn;
+                        transition: all 0.3s ease-in-out 0s;
+                    }
+                }
+            }
+        }
+
+        .saloon-text{
+            margin-top: 10rem;
+            @include media-max-md{
+                margin-top: 5rem;
+            }
+            h1{
+                font-size: 15px;
+                font-weight: 600;
+                @include media-min-sm{
+                    font-size: 60px;
+                    font-weight: 800;
+                }
+            }
+        }
+        .hamburger{
+            color: white;
+        }
+        .offcanvas{
+            background-color: #322119;
+        }
+        .header-text{
+            h1{
+                font-family: 'Impact';
+                font-weight: bolder;
+                font-size: 80px;
+            }
+            .perfect-text{
+                    @include media-max-sm{
+                        h1{
+                            font-size: 2px;
+                        }
+                        top:28rem;
+                        letter-spacing: 5px;
+                        margin-left: 1rem;
+                        font-size: 15px;
+                    }
+                    @include media-min-lg{
+                        h1{
+                            font-size: 2px;
+                        }
+                        top:17rem;
+                        letter-spacing: 5px;
+                        margin-left: 1rem;
+                        font-size: 15px;
+                    }
+                    @include media-min-lg-x{
+                        h1{
+                            font-size: 5px;
+                        }
+                            top:11rem;
+                            letter-spacing: 5px;
+                            margin-left: 3rem;
+                            font-size: 18px;
+                    }
+               
+            }
+        }
+          .top:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 5px;
+            width: 50%;
+            border-top: 3px solid white;
+          }
+          .bottom:before {
+            content: "";
+            position: absolute;
+            left: 2px;
+            bottom: 0;
+            height: 15px;
+            width: 50%;
+            border-bottom: 3px solid white;
+          }
+          .left:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            border-left: 3px solid white;
+          }
+          .right:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            border-right: 3px solid white;
+          }
+
+          .play-icon{
+            margin: 30px auto 30px auto;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid white;
+            i {
+                background: transparent;
+                font-size: 28px;
+                line-height: 0;
+              }
+          }
+          .appointment-btn{
+            background: linear-gradient(90deg, #FD006A 0%, #D700B5 100%);
+            font-family: $content-font-family;
+          }
+    }
+    .about{
+        font-family: 'Sulphur Point';
+        background-image: url('/public/images/Section_2_About_Us.jpg');
+        background-size: cover;
+        .about-head{
+            h1{
+                font-size: 5px;
+                @include media-min-md{
+                font-size: 45px;
+                }
+            }
+        }
+        .about-text{
+            line-height: 45px;
+            font-family: $header-font-family;
+            word-spacing: 5px;
+        }
+        .more-about-btn{
+            border-radius: 5px;
+        }
+    }
+    .services{
+        font-family: 'Sulphur Point';
+        background: url('/public/images/Section_3_Services.jpg');
+        .icon-border{
+            border: 2px dotted white;
+            // padding: 2px;
+            border-radius:2px;
+        }
+        .service-heading{
+                font-size: 15px;
+                @include media-min-md{
+                font-size: 45px;
+                }
+        }
+        
+        .service-btn{
+            border-radius: 5px;
+        }
+    }
+.pricing{
+    font-family: 'Sulphur Point';
+    background-image: url('/public/images/Section_4_Pricing.jpg');
+    background-size: cover;
+    
+    .pricing-accordian{
+        color: white;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.10);
+        @include media-min-md{
+            padding: 5rem;
+        }
+        // opacity: 1;
+        .content-pricing{
+            border-bottom: 2px dotted white;
+        }
+    }
+    .service-btn, .appointment-btn{
+        border-radius: 5px;
+    }
+}
+.portfolio{
+    font-family: 'Sulphur Point';
+    background-image: url('/public/images/Section_5_Portfolio.jpg');
+    background-size: cover;
+    .carousel-indicators{
+        button{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    }
+    .carousel-item{
+        overflow: hidden;
+        position: relative;
+        img{
+            transition: transform 0.3s, border 0.3s;
+        }
+        .carousel-item:hover img{
+                transform: scale(1.1);
+                border: 2px solid white;
+        }
+        
+    }
+    .zoom {  
+        transition: all 0.35s ease-in-out;     
+        cursor: -webkit-zoom-in;      
+        cursor: -moz-zoom-in;      
+        cursor: zoom-in;  
+        }
+        .zoom:hover,  
+        .zoom:active,   
+        .zoom:focus {  
+        border: 3px solid white;
+        transform: scale(1.5);    
+        position:relative;      
+        z-index:100;  
+        }
+        
+}
+.footer{
+    font-family: 'Sulphur Point';
+    background-image: url('/public/images/Section_6_Footer.jpg');
+    background-size: cover;
+    .footer-text{
+        line-height: 33px;
+    }
+    .links{
+        li{
+            text-decoration: underline;
+        }
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    .opening-hours{
+        li{
+            border-bottom: 2px dotted white;
+            width:70%;
+        }
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}
